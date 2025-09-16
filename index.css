@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: "Playfair Display", serif;
+}
+
+.navbar {
+  background-color: #ff6f6f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nav-links {
+  padding-left: 100px;
+  list-style: none;
+  display: flex;
+  gap: 40px; 
+}
+
+
+.nav-links li a {
+  line-height: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+.hero {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 80px;
+  background: linear-gradient(to right, #fff3b0, #ffc6c2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-left p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.hero-left button {
+  background-color: #ff6f6f;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  width: 250px;
+
+}
+
+.hero-left button:hover {
+  background-color: #e85b5b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-right {
+  flex: 1;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: 'Roboto', sans-serif;
+}
+.image-text-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fff3b0, #ffc6c2, #fcb0ff);
+}
+
+.image-flex-wrapper {
+  display: flex;
+  margin-right: 60px;
+  gap: 20px;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-column img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  
+}
+
+.text-block {
+  background-color: #ff6f6f;
+  padding: 40px 60px;
+  max-width: 400px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-block .subheading {
+  font-size: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.text-block h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.text-block .cta {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+}
+
+.cta .arrow {
+  font-weight: bold;
+  margin-left: 5px;
+  bottom: 5px;
+}
+ @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 15px;
+            }
+            
+            .nav-links {
+                display: none !important;
+            }
+            
+            .menu-icon {
+                display: block;
+            }
+            
+            .hero {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .hero-left {
+                padding: 40px 20px;
+            }
+            
+            .hero-left h1 {
+                font-size: 32px;
+            }
+            
+            .hero-left button {
+                width: 100%;
+            }
+            
+            .hero-right {
+                height: 300px;
+            }
+            
+            .image-text-flex {
+                flex-direction: column;
+                padding: 30px 15px;
+            }
+            
+            .image-flex-wrapper {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .image-column img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .text-block {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 8px 10px;
+            }
+            
+            .hero-left {
+                padding: 30px 15px;
+            }
+            
+            .hero-left h1 {
+                font-size: 28px;
+                letter-spacing: 1px;
+            }
+            
+            .hero-left p {
+                font-size: 14px;
+            }
+            
+            .image-text-flex {
+                padding: 20px 10px;
+            }
+            
+            .image-flex-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .image-column {
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .image-column img {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .text-block {
+                padding: 25px 20px;
+                width: 100%;
+                max-width: none;
+            }
+            
+            .text-block h1 {
+                font-size: 24px;
+            }
+        }
